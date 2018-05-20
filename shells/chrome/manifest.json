@@ -4,7 +4,7 @@
     "description": "Insert GIFs from Giphy.com into GitHub comments",
     "manifest_version": 2,
     "content_scripts": [{
-        "matches": ["*://*/*"],
+        "matches": ["*://github.com/*"],
         "js": ["inject.js"],
         "run_at": "document_idle"
     }],
